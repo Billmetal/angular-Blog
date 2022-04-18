@@ -1,27 +1,41 @@
 # Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
+Projeto realizado referente ao curso Desenvolvendo seu Blog com as tecnologias Angular e NodeJs, realizado pela Digital Innovation One.
+Neste repositório contém o Frontend da aplicação .
 
-## Development server
+## Para o Angular
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Para o Backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O Backend da aplicação foi realizado criando um server em `NodeJs` utilizando a biblioteca `json-server`.
 
-## Build
+Crie um arquivo chamado `banco.json` , e dentro deste arquivo monte um json no seguinte formato :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Digite um nome aqui",
+      "mensagem": "Adicione uma mensagem aqui"
+    },
+    {
+      "id": 2,
+      "nome": "Digite um nome aqui",
+      "mensagem": "Adicione uma mensagem aqui"
+    }
+  ]  
+}
 
-## Running unit tests
+Este arquivo será responsável por armazenar as informações .
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Dentro do arquivo `package.json` , em scripts  , configure o start com : `json-server --watch banco.json --port 3000` .
 
-## Running end-to-end tests
+Para iniciar o server , dentro do terminal digite `npm start` . O server estará funcionando no endereço `http://localhost:3000/posts` .
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
