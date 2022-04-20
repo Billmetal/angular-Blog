@@ -11,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Para o Backend
 
-O Backend da aplicação foi realizado criando um server em `NodeJs` utilizando a biblioteca `json-server`.
+O Backend da aplicação foi realizado criando um server em `NodeJs` em uma pasta fora deste projeto , e utilizando a biblioteca `json-server`.
 
 Crie um arquivo chamado `banco.json` , e dentro deste arquivo monte um json no seguinte formato :
 
